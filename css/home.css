@@ -1,0 +1,283 @@
+h1 {
+    color: #fff;
+    font-size: 68px;
+}
+
+h6 {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+.slick-slider .element {
+    height: 400px;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+
+
+
+}
+
+.text-overley h6 {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.text-overley {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: 48%;
+}
+
+.slick-slide img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.slider-box {
+    padding: 50px 0;
+}
+
+.slick-slider .slick-disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Customize the dots */
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Style individual dots */
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-slider:before {
+    content: 'LIVE';
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    color: red;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    border-radius: 10px 20px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Default dot appearance */
+.slick-dots li button {
+    border: none;
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0;
+}
+
+/* Active dot appearance */
+.slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+/* Hover effect */
+.slick-dots li button:hover {
+    background-color: #ffffff92;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title h4 {
+    font-size: 40px;
+}
+
+.section-title a {
+    color: orange;
+    font-size: 24px;
+}
+
+.icon a img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon a {
+    background: #56d9e8;
+    padding: 25px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-conatain {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.icon-title h5 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+section.card-section .section-conatain .card-img {
+    height: 220px;
+}
+
+section.card-section .section-conatain .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+}
+
+.card-contain h6 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.card-contain {
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.card-contain p {
+    margin: 0px;
+}
+
+section.card-section .section-conatain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.user img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.user {
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+
+@media(Max-width:992px) {
+    section.card-section .section-conatain {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-overley {
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media(Max-width:767px) {
+    nav.navigetion {
+        display: none;
+    }
+
+    section.card-section .section-conatain {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-overley {
+        padding-bottom: 50px;
+    }
+
+
+}
+
+@media(Max-width:574px) {
+    .header-wrapper .logo a img {
+        max-width: 100px;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 45px;
+    }
+
+    h6 {
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .section-title h4 {
+        font-size: 28px;
+    }
+
+
+    .footer-wrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-wrapper ul.Footer-media {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+}
